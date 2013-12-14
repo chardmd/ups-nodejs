@@ -18,7 +18,7 @@ so are you ready? let's see it in action.
 
 An all encompassing tool for enterprises. This allows you to actually ship things and printed labels. The process to use the Shipping API consists of two phases, the ship confirm phase followed by the ship accept phase. 
 
-#### ShipConfirm
+### ShipConfirm
 
 ##### Initialization
 
@@ -55,7 +55,7 @@ An all encompassing tool for enterprises. This allows you to actually ship thing
       }
     });
     
-#### ShipAccept
+### ShipAccept
 
 ##### Initialization
 
