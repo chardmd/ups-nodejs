@@ -31,7 +31,9 @@ so are you ready? let's see it in action.
 
 ### 1) How Shipping Services Work
 
-An all encompassing tool for enterprises. This allows you to actually ship things and printed labels. The process to use the Shipping API consists of two phases, the ship confirm phase followed by the ship accept phase. 
+Shipping Services give your applications many ways to manage the shipment of small packages to their destination. UPS offers a range of delivery time frames from same day to standard ground transportation. Shipments may be within the United States or international, and they may range from letter documents to large packages. 
+
+The process to use the Shipping API consists of two phases, the ship confirm phase followed by the ship accept phase. 
 
 ### ShipConfirm
 
