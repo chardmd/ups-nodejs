@@ -1,4 +1,4 @@
-Ups-Node-Js: An easy to use NodeJS module for integrating UPS APIs
+Ups-Node-JS: An easy to use NodeJS module for integrating UPS APIs
 =======================
 
 Every UPS API has a corresponding manual which contains hundred of pages long and reading each books is a pain in the ass. And unfortunately there is no provided example written on Node.js
