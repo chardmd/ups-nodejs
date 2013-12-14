@@ -52,7 +52,7 @@ The process to use the Shipping API consists of two phases, the ship confirm pha
 
     confirmShipment.setJsonResponse(true);
     
-##### Start making Request.
+##### Start making Request
 
     confirmShipment.makeRequest({
       "validate": "nonvalidate",
@@ -89,7 +89,7 @@ The process to use the Shipping API consists of two phases, the ship confirm pha
 
     acceptShipment.setJsonResponse(true);
     
-##### Start making Request.
+##### Start making Request
 
     confirmShipment.makeRequest({
       "digest" : "rO0ABXNyACpjb20udXBzLmVjaXMuY29yZS5zaGlwbWVudHMuU2hpcG1lbnREaWdlc...."
