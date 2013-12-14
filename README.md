@@ -1,4 +1,4 @@
-Ups-Node-js: An easy to use NodeJS module for integrating UPS APIs
+Ups-Node-Js: An easy to use NodeJS module for integrating UPS APIs
 =======================
 
 Every UPS API has a corresponding manual which contains hundred of pages long and reading each books is a pain in the ass. And unfortunately there is no provided example written on Node.js
@@ -13,7 +13,8 @@ Forget about those boring long and hundred of pages manuals. this is a very simp
 
 #### Supports JSON Request and Response
 
-Direct UPS APIs still uses plain old XML for their web services. But don't you worry boys and girls, Ups-Node-Js supports JSON.
+Direct UPS APIs still uses plain old XML for their web services. But don't yah worry boys and girls...
+Ups-Node-JS supports JSON.
 
 #### How to start?
 
