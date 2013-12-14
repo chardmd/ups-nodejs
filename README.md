@@ -5,7 +5,7 @@ Every UPS API has a corresponding manual which contains hundred of pages long an
 
 Check it out boys and girls and see it for yourself. [UPS Developers Guide] (https://www.ups.com/upsdeveloperkit)
 
-### Why use Ups-Node-Js?
+### Why use Ups-Node-JS?
 
 #### Dead Simple
 
@@ -13,7 +13,7 @@ Forget about those boring long and hundred of pages manuals. this is a very simp
 
 #### Supports JSON Request and Response
 
-Direct UPS APIs still uses plain old XML for their web services. But don't yah worry boys and girls...
+Direct UPS APIs still uses plain old XML for their web services. But don't you worry my friend,
 Ups-Node-JS supports JSON.
 
 #### How to start?
