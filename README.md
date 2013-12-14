@@ -1,13 +1,19 @@
 A collection of UPS API converted to NodeJS module
 =======================
 
-This is a very simple NodeJS module for UPS API, so simple, even your grandmother can use it. 
+Hey boys and girls, this is a very simple NodeJS module for UPS API, so simple, even your grandmother can use it! :-)
 
-are you ready? let's see it in action.
+But before we start, you need to have an access to UPS API. Getting access to the UPS developer tools is pretty easy. The first thing you will want to do is:
+
+[Register for UPS Online Tools] (https://www.ups.com/servlet/registration?loc=en_US&returnto=http%3A%2F%2Fwww.ups.com%2Fe_comm_access%2FlaServ%3Floc%3Den_US)
+
+
+
+so are you ready? let's see it in action.
 
 ### 1) How Shipping Services Work
 
-The process to use the Shipping API consists of two phases, the ship confirm phase followed by the ship accept phase.
+An all encompassing tool for enterprises. This allows you to actually ship things and printed labels. The process to use the Shipping API consists of two phases, the ship confirm phase followed by the ship accept phase. 
 
 #### ShipConfirm
 
@@ -45,6 +51,38 @@ The process to use the Shipping API consists of two phases, the ship confirm pha
       	console.log(data);
       }
     });
+    
+#### ShipAccept
+
+##### Initialization
+
+    var ShipAccept = require('./lib/shipAccept');
+
+    var acceptShipment = new ShipAccept(<API licenseId>, <API userId>, <API password>);
+    
+##### Switch to Sandbox
+
+    acceptShipment.useSandbox(true);
+    
+##### Response as JSON
+
+    acceptShipment.setJsonResponse(true);
+    
+##### Start making Request.
+
+    confirmShipment.makeRequest({
+      "digest" : "rO0ABXNyACpjb20udXBzLmVjaXMuY29yZS5zaGlwbWVudHMuU2hpcG1lbnREaWdlc...."
+    }, function(err, data) {
+      if (err) {
+        console.error(err);
+      }
+    
+      if (data) {
+        //Enjoy playing the data :)
+      	console.log(data);
+      }
+    });
+
     
     
 [List of allowed parameters can be found in the UPS Developers Guide] (https://www.ups.com/upsdeveloperkit)
