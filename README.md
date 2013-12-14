@@ -1,18 +1,35 @@
-A collection of UPS API converted to NodeJS module
+Ups-Node-js: An easy to use NodeJS module for integrating UPS APIs
 =======================
 
-Hey boys and girls, this is a very simple NodeJS module that allow you to communicate with UPS servers very easily, it's so simple, even your grandmother can use it :-P
+Every UPS API has a corresponding manual which contains hundred of pages long and reading each books is a pain in the ass. And unfortunately there is no provided example written on Node.js
 
+Check it out boys and girls and see it for yourself. [UPS Developers Guide] (https://www.ups.com/upsdeveloperkit)
 
-But before we start, you need to have an access to UPS API. Getting access to the UPS developer tools is pretty easy. The first thing you'll want to do is:
+### Why use Ups-Node-Js?
+
+#### Dead Simple
+
+Forget about those boring long and hundred of pages manuals. this is a very simple NodeJS module for UPS API. It's so simple, even your grandmother can do it!
+
+#### Supports JSON Request and Response
+
+Direct UPS APIs still uses plain old XML for their web services. But don't you worry boys and girls, Ups-Node-Js supports JSON.
+
+#### How to start?
+
+Before we start, you need to have an access to UPS API. Getting access to the UPS developer tools is pretty easy. The first thing you will want to do is:
 
 [Register for UPS Online Tools] (https://www.ups.com/servlet/registration?loc=en_US&returnto=http%3A%2F%2Fwww.ups.com%2Fe_comm_access%2FlaServ%3Floc%3Den_US)
 
+#### Is this stable?
 
+As of current writing, this is still in beta stage. Feel free to play around. I'll be happy to merge your changes.
+
+#### Start Rocking!
 
 so are you ready? let's see it in action.
 
-## 1) How Shipping Services Work
+### 1) How Shipping Services Work
 
 An all encompassing tool for enterprises. This allows you to actually ship things and printed labels. The process to use the Shipping API consists of two phases, the ship confirm phase followed by the ship accept phase. 
 
@@ -84,7 +101,4 @@ An all encompassing tool for enterprises. This allows you to actually ship thing
       }
     });
 
-
-    
-    
 [List of allowed parameters can be found in the UPS Developers Guide] (https://www.ups.com/upsdeveloperkit)
