@@ -17,7 +17,7 @@ The process to use the Shipping API consists of two phases, the ship confirm pha
 
     var confirmShipment = new ShipConfirm(<API licenseId>, <API userId>, <API password>);
     
-##### Switch to sandbox
+##### Switch to Sandbox
 
     confirmShipment.useSandbox(true);
     
@@ -25,7 +25,7 @@ The process to use the Shipping API consists of two phases, the ship confirm pha
 
     confirmShipment.setJsonResponse(true);
     
-##### Start making request.
+##### Start making Request.
 
     confirmShipment.makeRequest({
       "validate": "nonvalidate",
