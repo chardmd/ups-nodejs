@@ -103,5 +103,6 @@ The process to use the Shipping API consists of two phases, the ship confirm pha
       	console.log(data);
       }
     });
+    
 
-[List of allowed parameters can be found in the UPS Developers Guide] (https://www.ups.com/upsdeveloperkit)
+...to be continue.
