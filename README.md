@@ -58,7 +58,7 @@ The process to use the Shipping API consists of two phases, the ship confirm pha
 
     confirmShipment.setJsonResponse(true);
     
-##### Start making Request
+##### Start making a Request
 
     confirmShipment.makeRequest({
       "validate": "nonvalidate",
@@ -95,7 +95,7 @@ The process to use the Shipping API consists of two phases, the ship confirm pha
 
     acceptShipment.setJsonResponse(true);
     
-##### Start making Request
+##### Start making a Request
 
     confirmShipment.makeRequest({
       "digest" : "rO0ABXNyACpjb20udXBzLmVjaXMuY29yZS5zaGlwbWVudHMuU2hpcG1lbnREaWdlc...."
@@ -115,7 +115,7 @@ The process to use the Shipping API consists of two phases, the ship confirm pha
 
 Customers can validate the accuracy of their address at the regional level. The API can help reduce costly returns, provide better service to customers, and more accurately determine shipping costs. When the Address Validation API finds close matches for a given input combination, a postal code range may be associated with each match.
     
-##### Start making Request
+##### Start making a Request
 
     addressValidation.makeRequest({
             "customerContext" : "Customer Data",
@@ -151,5 +151,48 @@ No matter which UPS shipping system you use, voiding an unshipped package is eas
       }
     });
 
+### 4) Time in Transit Operation
+
+Find out what services you can ship with to a certain area. It can determine the delivery time for various UPS services. The API lets you compare the speed of delivery of different services so that you can select the service most appropriate for your shipment.
+
+##### Start making a Request
+
+    timeInTransit.makeRequest({
+            
+        "customerContext": "Walter White",
+        "transitFrom": {
+            "fromCountryCode": "US",
+            "fromCountry": "New York",
+            "fromDivision1": "Breaking Bad City",
+            "fromDivision2": "London"
+        },    
+        "transitTo": {
+            "toDivision2": "Philippines",
+            "postCode": "2010",
+            "addressIndicator": "Clark Pampanga",
+            "toCountryCode": "PH"
+        },
+        "shipmentWeight": {
+            "weight": "123",
+            "description": "Kilograms",
+            "code": "KGS"
+        },    
+        "invoiceLineTotal": {
+            "currencyCode": "USD",
+            "monetaryValue": "250.00"
+        },
+        "totalPackageShipment": "123",
+        "pickupDate": "20131208"
+
+    }, function(err, data) {
+      if (err) {
+        console.error(err);
+      }
+    
+      if (data) {
+        //Enjoy playing the data :)
+        console.log(data);
+      }
+    });
 
 
