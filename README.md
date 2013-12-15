@@ -114,20 +114,6 @@ The process to use the Shipping API consists of two phases, the ship confirm pha
 ### 2) UPS Address Validation Tool
 
 Customers can validate the accuracy of their address at the regional level. The API can help reduce costly returns, provide better service to customers, and more accurately determine shipping costs. When the Address Validation API finds close matches for a given input combination, a postal code range may be associated with each match.
-
-##### Initialization
-
-    var AddressValidation = require('./lib/addressValidation');
-
-    var addressValidation = new AddressValidation(<API licenseId>, <API userId>, <API password>);
-    
-##### Switch to Sandbox
-
-    addressValidation.useSandbox(true);
-    
-##### Response as JSON
-
-    addressValidation.setJsonResponse(true);
     
 ##### Start making Request
 
