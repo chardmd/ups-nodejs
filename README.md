@@ -30,6 +30,12 @@ As of current writing, this is still in beta stage. Feel free to play around. I'
 
 so are you ready? let's see it in action.
 
+### How to Install
+
+Run this [npm](http://npmjs.org/) command to install
+
+    npm install ups_node
+
 ### 1) How Shipping Services Work
 
 Shipping Services give your applications many ways to manage the shipment of small packages to their destination. UPS offers a range of delivery time frames from same day to standard ground transportation. Shipments may be within the United States or international, and they may range from letter documents to large packages. 
@@ -105,4 +111,42 @@ The process to use the Shipping API consists of two phases, the ship confirm pha
     });
     
 
-...to be continue.
+### 2) UPS Address Validation Tool
+
+Customers can validate the accuracy of their address at the regional level. The API can help reduce costly returns, provide better service to customers, and more accurately determine shipping costs. When the Address Validation API finds close matches for a given input combination, a postal code range may be associated with each match.
+
+##### Initialization
+
+    var AddressValidation = require('./lib/addressValidation');
+
+    var addressValidation = new AddressValidation(<API licenseId>, <API userId>, <API password>);
+    
+##### Switch to Sandbox
+
+    addressValidation.useSandbox(true);
+    
+##### Response as JSON
+
+    addressValidation.setJsonResponse(true);
+    
+##### Start making Request
+
+    addressValidation.makeRequest({
+            "customerContext" : "Customer Data",
+            "city" : "Miami",
+            "stateProvinceCode": "FL"
+    }, function(err, data) {
+      if (err) {
+        console.error(err);
+      }
+    
+      if (data) {
+        //Enjoy playing the data :)
+      	console.log(data);
+      }
+    });
+
+
+
+
+
