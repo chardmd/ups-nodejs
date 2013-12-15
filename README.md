@@ -76,12 +76,12 @@ The process to use the Shipping API consists of two phases, the ship confirm pha
 ##### Start making a Request
 
     confirmShipment.makeRequest({
-      "validate": "nonvalidate",
-      "shipment": {
-          "description": "Shipment to Philippines",
-          "shipper": {
-              "name": "RP Republic",
-              "attentionName": "Jose Rizal",
+      validate: "nonvalidate",
+      shipment: {
+          description: "Shipment to Philippines",
+          shipper: {
+              name: "RP Republic",
+              attentionName: "Jose Rizal",
         //More request parameters
     }, function(err, data) {
       if (err) {
@@ -113,7 +113,7 @@ The process to use the Shipping API consists of two phases, the ship confirm pha
 ##### Start making a Request
 
     confirmShipment.makeRequest({
-      "digest" : "rO0ABXNyACpjb20udXBzLmVjaXMuY29yZS5zaGlwbWVudHMuU2hpcG1lbnREaWdlc...."
+      digest : "rO0ABXNyACpjb20udXBzLmVjaXMuY29yZS5zaGlwbWVudHMuU2hpcG1lbnREaWdlc...."
     }, function(err, data) {
       if (err) {
         console.error(err);
@@ -133,9 +133,9 @@ Customers can validate the accuracy of their address at the regional level. The 
 ##### Start making a Request
 
     addressValidation.makeRequest({
-            "customerContext" : "Customer Data",
-            "city" : "Miami",
-            "stateProvinceCode": "FL"
+            customerContext : "Customer Data",
+            city : "Miami",
+            stateProvinceCode: "FL"
     }, function(err, data) {
       if (err) {
         console.error(err);
@@ -154,7 +154,7 @@ No matter which UPS shipping system you use, voiding an unshipped package is eas
 ##### Start making Request
 
     voidShipment.makeRequest({
-            "tracking" : "123123123ASDF23.."
+            tracking : "123123123ASDF23.."
     }, function(err, data) {
       if (err) {
         console.error(err);
@@ -173,11 +173,11 @@ Find out what services you can ship with to a certain area. It can determine the
 ##### Start making a Request
 
     timeInTransit.makeRequest({ 
-        "customerContext": "Walter White",
-        "transitFrom": {
-            "fromCountryCode": "US",
-            "fromCountry": "New York",
-            "fromDivision1": "Breaking Bad City",
+        customerContext: "Walter White",
+        transitFrom: {
+            fromCountryCode: "US",
+            fromCountry: "New York",
+            fromDivision1: "Breaking Bad City",
             // more parameters here
         }, function(err, data) {
           if (err) {
