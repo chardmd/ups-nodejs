@@ -1,6 +1,6 @@
 {
   "name": "ups_node",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A simple NodeJS module for integrating UPS APIs",
   "dependencies": {
     "xml2js": "~0.4.0"
@@ -28,7 +28,7 @@
     "pickup"
   ],
   "author": "Richard Dimalanta",
-  "license": "BSD",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/richarddimalanta/ups-node-js/issues"
   }
