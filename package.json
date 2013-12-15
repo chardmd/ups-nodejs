@@ -1,10 +1,11 @@
 {
   "name": "ups_node",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A simple NodeJS module for integrating UPS APIs",
   "dependencies": {
     "xml2js": "~0.4.0"
   },
+  "main": "index.js",
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
