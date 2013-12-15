@@ -163,25 +163,7 @@ Find out what services you can ship with to a certain area. It can determine the
             "fromCountryCode": "US",
             "fromCountry": "New York",
             "fromDivision1": "Breaking Bad City",
-            "fromDivision2": "London"
-        },    
-        "transitTo": {
-            "toDivision2": "Philippines",
-            "postCode": "2010",
-            "addressIndicator": "Clark Pampanga",
-            "toCountryCode": "PH"
-        },
-        "shipmentWeight": {
-            "weight": "123",
-            "description": "Kilograms",
-            "code": "KGS"
-        },    
-        "invoiceLineTotal": {
-            "currencyCode": "USD",
-            "monetaryValue": "250.00"
-        },
-        "totalPackageShipment": "123",
-        "pickupDate": "20131208"
+            // more parameters here
         }, function(err, data) {
           if (err) {
             console.error(err);
