@@ -26,6 +26,18 @@ Before we start, you need to have an access to UPS API. Getting access to the UP
 
 As of current writing, this is still in beta stage. Feel free to play around. I'll be happy to merge your changes.
 
+
+#### What are the available APIs?
+
+|    API            | Status        |
+| ------------------|:-------------:|
+| shipConfirm       | available     |
+| shipAccept        | available     |
+| voidShipment      | available     |
+| timeInTransit     | available     |
+| addressValidation | available     |
+
+
 #### Start Rocking!
 
 so are you ready? let's see it in action.
