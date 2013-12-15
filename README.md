@@ -9,12 +9,11 @@ Check it out boys and girls and see it for yourself. [UPS Developers Guide] (htt
 
 #### Dead Simple
 
-Forget about those boring hundred of pages manuals. this is a very simple NodeJS module for UPS API. It's so simple,
-_even your grandmother can do it_!
+Forget about those boring hundred of pages manuals. This is a very simple NodeJS module for integrating UPS APIs. It's so simple, _even your grandmother can do it_!
 
 #### Supports JSON Request and Response
 
-Direct UPS APIs still uses plain old XML for their web services. But don't you worry ma' friend,
+Direct UPS APIs still use plain old XML for their web services. But don't you worry ma' friend,
 Ups-Node-JS supports JSON.
 
 #### How to start?
