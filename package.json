@@ -21,7 +21,11 @@
     "address",
     "validation",
     "shipping",
-    "cost"
+    "cost",
+    "timeIntransit",
+    "locator",
+    "rating",
+    "pickup"
   ],
   "author": "Richard Dimalanta",
   "license": "BSD",
