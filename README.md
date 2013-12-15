@@ -132,7 +132,24 @@ Customers can validate the accuracy of their address at the regional level. The 
       }
     });
 
+### 3) Cancellations (Voids)
 
+No matter which UPS shipping system you use, voiding an unshipped package is easy.
+
+##### Start making Request
+
+    voidShipment.makeRequest({
+            "tracking" : "123123123ASDF23.."
+    }, function(err, data) {
+      if (err) {
+        console.error(err);
+      }
+    
+      if (data) {
+        //Enjoy playing the data :)
+        console.log(data);
+      }
+    });
 
 
 
