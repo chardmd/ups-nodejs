@@ -9,7 +9,7 @@ Check it out boys and girls and see it for yourself. [UPS Developers Guide] (htt
 
 #### Dead Simple
 
-Forget about those boring long and hundred of pages manuals. this is a very simple NodeJS module for UPS API. It's so simple, even your grandmother can do it!
+Forget about those boring hundred of pages manuals. this is a very simple NodeJS module for UPS API. It's so simple, even your grandmother can do it!
 
 #### Supports JSON Request and Response
 
