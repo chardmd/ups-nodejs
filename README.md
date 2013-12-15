@@ -29,14 +29,17 @@ As of current writing, this is still in beta stage. Feel free to play around. I'
 
 #### What are the available APIs?
 
-|    API            | Status        |
-| ------------------|:-------------:|
-| shipConfirm       | available     |
-| shipAccept        | available     |
-| voidShipment      | available     |
-| timeInTransit     | available     |
-| addressValidation | available     |
-
+|    API                 | STATUS        |
+|------------------------|---------------|
+| shipConfirm            | available     |
+| shipAccept             | available     |
+| addressValidation      | available     |
+| locator                | soon          |
+| pickup                 | soon          |
+| voidShipment           | available     |
+| timeInTransit          | available     |
+| ratingServiceSelection | soon          |
+| tracking               | soon          |
 
 #### Start Rocking!
 
