@@ -1,6 +1,6 @@
 {
   "name": "ups_node",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A simple NodeJS module for integrating UPS APIs",
   "dependencies": {
     "xml2js": "~0.4.0"
