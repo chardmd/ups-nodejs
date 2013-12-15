@@ -9,7 +9,8 @@ Check it out boys and girls and see it for yourself. [UPS Developers Guide] (htt
 
 #### Dead Simple
 
-Forget about those boring hundred of pages manuals. this is a very simple NodeJS module for UPS API. It's so simple, even your grandmother can do it!
+Forget about those boring hundred of pages manuals. this is a very simple NodeJS module for UPS API. It's so simple,
+_even your grandmother can do it_!
 
 #### Supports JSON Request and Response
 
@@ -51,7 +52,7 @@ Run this [npm](http://npmjs.org/) command to install
 
     npm install ups_node
 
-### 1) How Shipping Services Work
+## 1) How Shipping Services Work
 
 Shipping Services give your applications many ways to manage the shipment of small packages to their destination. UPS offers a range of delivery time frames from same day to standard ground transportation. Shipments may be within the United States or international, and they may range from letter documents to large packages. 
 
@@ -126,7 +127,7 @@ The process to use the Shipping API consists of two phases, the ship confirm pha
     });
     
 
-### 2) UPS Address Validation Tool
+## 2) UPS Address Validation Tool
 
 Customers can validate the accuracy of their address at the regional level. The API can help reduce costly returns, provide better service to customers, and more accurately determine shipping costs. When the Address Validation API finds close matches for a given input combination, a postal code range may be associated with each match.
     
@@ -147,7 +148,7 @@ Customers can validate the accuracy of their address at the regional level. The 
       }
     });
 
-### 3) Cancellations (Voids)
+## 3) Cancellations (Voids)
 
 No matter which UPS shipping system you use, voiding an unshipped package is easy.
 
@@ -166,7 +167,7 @@ No matter which UPS shipping system you use, voiding an unshipped package is eas
       }
     });
 
-### 4) Time in Transit Operation
+## 4) Time in Transit Operation
 
 Find out what services you can ship with to a certain area. It can determine the delivery time for various UPS services. The API lets you compare the speed of delivery of different services so that you can select the service most appropriate for your shipment.
 
