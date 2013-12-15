@@ -1,11 +1,11 @@
 UPS-Node-JS: An easy to use NodeJS module for integrating UPS APIs
 =======================
 
-Every UPS API has a corresponding manual which contains hundred of pages long and reading each books is quite pain in the ass. And unfortunately there is no provided example written in Node.JS.
+Each UPS API has a corresponding manual which mostly contains hundreds of pages long and reading every book is quite a pain in the ass. Unfortunately there is no provided example written in Node.JS.
 
 Check it out boys and girls and see it for yourself. [UPS Developers Guide] (https://www.ups.com/upsdeveloperkit)
 
-### Why use Ups-Node-JS?
+### Why use UPS-Node-JS?
 
 #### Dead Simple
 
