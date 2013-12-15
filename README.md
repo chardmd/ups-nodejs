@@ -1,7 +1,7 @@
-Ups-Node-JS: An easy to use NodeJS module for integrating UPS APIs
+UPS-Node-JS: An easy to use NodeJS module for integrating UPS APIs
 =======================
 
-Every UPS API has a corresponding manual which contains hundred of pages long and reading each books is a pain in the ass. And unfortunately there is no provided example written on Node.js
+Every UPS API has a corresponding manual which contains hundred of pages long and reading each books is a pain in the ass. And unfortunately there is no provided example written in Node.JS.
 
 Check it out boys and girls and see it for yourself. [UPS Developers Guide] (https://www.ups.com/upsdeveloperkit)
 
@@ -13,12 +13,12 @@ Forget about those boring hundred of pages manuals. this is a very simple NodeJS
 
 #### Supports JSON Request and Response
 
-Direct UPS APIs still uses plain old XML for their web services. But don't you worry my friend,
+Direct UPS APIs still uses plain old XML for their web services. But don't you worry ma' friend,
 Ups-Node-JS supports JSON.
 
 #### How to start?
 
-Before we start, you need to have an access to UPS API. Getting access to the UPS developer tools is pretty easy. The first thing you will want to do is:
+Before we start, you need to have an access to UPS API. Getting access to the UPS developer tools is pretty easy. The first thing you'll want to do is:
 
 [Register for UPS Online Tools] (https://www.ups.com/servlet/registration?loc=en_US&returnto=http%3A%2F%2Fwww.ups.com%2Fe_comm_access%2FlaServ%3Floc%3Den_US)
 
@@ -29,7 +29,7 @@ As of current writing, this is still in beta stage. Feel free to play around. I'
 
 #### What are the available APIs?
 
-|    API                 | STATUS        |
+|    API                 | Status        |
 |------------------------|---------------|
 | shipConfirm            | available     |
 | shipAccept             | available     |
