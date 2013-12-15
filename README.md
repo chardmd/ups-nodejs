@@ -157,8 +157,7 @@ Find out what services you can ship with to a certain area. It can determine the
 
 ##### Start making a Request
 
-    timeInTransit.makeRequest({
-            
+    timeInTransit.makeRequest({ 
         "customerContext": "Walter White",
         "transitFrom": {
             "fromCountryCode": "US",
@@ -183,16 +182,13 @@ Find out what services you can ship with to a certain area. It can determine the
         },
         "totalPackageShipment": "123",
         "pickupDate": "20131208"
-
-    }, function(err, data) {
-      if (err) {
-        console.error(err);
-      }
-    
-      if (data) {
-        //Enjoy playing the data :)
-        console.log(data);
-      }
-    });
-
-
+        }, function(err, data) {
+          if (err) {
+            console.error(err);
+          }
+        
+          if (data) {
+            //Enjoy playing the data :)
+            console.log(data);
+          }
+        });
