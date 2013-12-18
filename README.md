@@ -38,7 +38,7 @@ As of current writing, this is still in beta stage. Feel free to play around. I'
 | pickup                 | soon          |
 | voidShipment           | available     |
 | timeInTransit          | available     |
-| ratingServiceSelection | soon          |
+| ratingServiceSelection | available     |
 | tracking               | soon          |
 
 #### Start Rocking!
@@ -189,6 +189,90 @@ Find out what services you can ship with to a certain area. It can determine the
             console.log(data);
           }
         });
+
+## 5) Rating Services
+
+The Rating API gives applications the ability to look up rates for UPS services and compare the cost of service alternatives.
+
+* Find the rate for a specific UPS service for a specific package or shipment
+* Compare available rates and services for a specific package or shipment
+* Request negotiated rates for a specific package or shipment 
+
+        rating.makeRequest({
+            "customerContext": "Rating and Service",
+            "pickUpType": {
+                "code": "07",
+                "description": "Rate"
+            },
+            "shipment": {
+                "description": "Rate Description",
+                "name": "Name",
+                "phoneNumber": "1234567890",
+                "shipperNumber": "Ship Number",
+                "shipper": {
+                    "address": {
+                        "addressLine": "Address Line",
+                        "city": "City",
+                        "StateProvinceCode": "NJ",
+                        "PostalCode": "07430",
+                        "countryCode": "US"
+                    }
+                },
+                "shipTo": {
+                    "companyName": "Company Name",
+                    "phoneNumber": "1234567890",
+                    "address": {
+                        "addressLine": "Address Line",
+                        "city": "Corado",
+                        "postalCode": "00646",
+                        "countryCode": "PR"
+                    }
+                },
+                "shipFrom": {
+                    "companyName": "Company Name",
+                    "attentionName": "Attention Name",
+                    "phoneNumber": "1234567890",
+                    "faxNumber": "1234567890",
+                    "address": {
+                        "addressLine": "Address Line",
+                        "city": "Boca Raton",
+                        "stateProvinceCode": "FL",
+                        "postalCode": "33434",
+                        "countryCode": "US"
+                    }
+                },
+                "service": {
+                    "code": "03"
+                },
+                "paymentInformation": {
+                    "accountNumber": "Ship Number"
+                },
+                "package": [
+                    {
+                        "code": "02",
+                        "weight": "1"
+                    },
+                    {
+                        "code": "02",
+                        "weight": "1"
+                    }
+                ],
+                "schedule": {
+                    "pickUpDay": "02",
+                    "method": "02"
+                }
+            }
+        }, function(err, data) {
+          if (err) {
+            console.error(err);
+          }
+
+          if (data) {
+
+            console.log(data);
+          }
+        });
+        
 
 Richard Dimalanta
 =======================
