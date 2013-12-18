@@ -194,10 +194,6 @@ Find out what services you can ship with to a certain area. It can determine the
 
 The Rating API gives applications the ability to look up rates for UPS services and compare the cost of service alternatives.
 
-- Find the rate for a specific UPS service for a specific package or shipment
-- Compare available rates and services for a specific package or shipment
-- Request negotiated rates for a specific package or shipment 
-
         rating.makeRequest({
             "customerContext": "Rating and Service",
             "pickUpType": {
