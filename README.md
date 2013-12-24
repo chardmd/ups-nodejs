@@ -118,9 +118,9 @@ The process to use the Shipping API consists of two phases, the ship confirm pha
             code : "02",
             weight : "1"
           }
-      ]
-    }
-});
+         ]
+        }
+     });
     
 ### ShipAccept
 
