@@ -195,67 +195,67 @@ Find out what services you can ship with to a certain area. It can determine the
 The Rating API gives applications the ability to look up rates for UPS services and compare the cost of service alternatives.
 
         rating.makeRequest({
-            "customerContext": "Rating and Service",
-            "pickUpType": {
-                "code": "07",
-                "description": "Rate"
+            customerContext: "Rating and Service",
+            pickUpType: {
+                code: "07",
+                description: "Rate"
             },
-            "shipment": {
-                "description": "Rate Description",
-                "name": "Name",
-                "phoneNumber": "1234567890",
-                "shipperNumber": "Ship Number",
-                "shipper": {
-                    "address": {
-                        "addressLine": "Address Line",
-                        "city": "City",
-                        "StateProvinceCode": "NJ",
-                        "PostalCode": "07430",
-                        "countryCode": "US"
+            shipment: {
+                description: "Rate Description",
+                name: "Name",
+                phoneNumber: "1234567890",
+                shipperNumber: "Ship Number",
+                shipper: {
+                    address: {
+                        addressLine: "Address Line",
+                        city: "City",
+                        StateProvinceCode: "NJ",
+                        PostalCode: "07430",
+                        countryCode: "US"
                     }
                 },
-                "shipTo": {
-                    "companyName": "Company Name",
-                    "phoneNumber": "1234567890",
-                    "address": {
-                        "addressLine": "Address Line",
-                        "city": "Corado",
-                        "postalCode": "00646",
-                        "countryCode": "PR"
+                shipTo: {
+                    companyName: "Company Name",
+                    phoneNumber: "1234567890",
+                    address: {
+                        addressLine: "Address Line",
+                        city: "Corado",
+                        postalCode: "00646",
+                        countryCode: "PR"
                     }
                 },
-                "shipFrom": {
-                    "companyName": "Company Name",
-                    "attentionName": "Attention Name",
-                    "phoneNumber": "1234567890",
-                    "faxNumber": "1234567890",
-                    "address": {
-                        "addressLine": "Address Line",
-                        "city": "Boca Raton",
-                        "stateProvinceCode": "FL",
-                        "postalCode": "33434",
-                        "countryCode": "US"
+                shipFrom: {
+                    companyName: "Company Name",
+                    attentionName: "Attention Name",
+                    phoneNumber: "1234567890",
+                    faxNumber: "1234567890",
+                    address: {
+                        addressLine: "Address Line",
+                        city: "Boca Raton",
+                        stateProvinceCode: "FL",
+                        postalCode: "33434",
+                        countryCode: "US"
                     }
                 },
-                "service": {
-                    "code": "03"
+                service: {
+                    code: "03"
                 },
-                "paymentInformation": {
-                    "accountNumber": "Ship Number"
+                paymentInformation: {
+                    accountNumber: "Ship Number"
                 },
-                "package": [
+                package: [
                     {
-                        "code": "02",
-                        "weight": "1"
+                        code: "02",
+                        weight: "1"
                     },
                     {
-                        "code": "02",
-                        "weight": "1"
+                        code: "02",
+                        weight: "1"
                     }
                 ],
-                "schedule": {
-                    "pickUpDay": "02",
-                    "method": "02"
+                schedule: {
+                    pickUpDay: "02",
+                    method: "02"
                 }
             }
         }, function(err, data) {
