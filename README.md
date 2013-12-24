@@ -22,10 +22,6 @@ Before we start, you need to have an access to UPS API. Getting access to the UP
 
 [Register for UPS Online Tools] (https://www.ups.com/servlet/registration?loc=en_US&returnto=http%3A%2F%2Fwww.ups.com%2Fe_comm_access%2FlaServ%3Floc%3Den_US)
 
-#### Is this stable?
-
-As of current writing, this is still in beta stage. Feel free to play around. I'll be happy to merge your changes.
-
 
 #### What are the available APIs?
 
@@ -34,8 +30,6 @@ As of current writing, this is still in beta stage. Feel free to play around. I'
 | shipConfirm            | available     |
 | shipAccept             | available     |
 | addressValidation      | available     |
-| locator                | soon          |
-| pickup                 | soon          |
 | voidShipment           | available     |
 | timeInTransit          | available     |
 | ratingServiceSelection | available     |
@@ -76,23 +70,57 @@ The process to use the Shipping API consists of two phases, the ship confirm pha
 ##### Start making a Request
 
     confirmShipment.makeRequest({
-         validate: "nonvalidate",
-         shipment: {
-             description: "Shipment to Philippines",
-             shipper: {
-                 name: "RP Republic",
-                 attentionName: "Jose Rizal",
-         //More request parameters
-    }, function(err, data) {
-      if (err) {
-        console.error(err);
-      }
-    
-      if (data) {
-        //Enjoy playing the data :)
-      	console.log(data);
-      }
-    });
+      validate: "nonvalidate",
+      shipment: {
+          description: "Shipment to Philippines",
+          shipper: {
+            name: "Metro Inc Limited",
+            attentionName: "Linda Hung",
+            phone: "28928757",
+            shipperNumber: "AYAB89",
+            phone: "28928757",
+            address: {
+              address1: "Flat G, 8/F",
+              address2: "Sun East Industrial Centre",
+              address3: "16 Shing Yip Street",
+              city: "KWUN TONG",
+              state: "HK",
+              country: "HK",
+              zip: "75093"
+            }
+        },
+        shipTo: {
+            companyName: "Metrosix sample ship",
+            attentionName: "Richard Dimalanta",
+            phone: "28928757",
+            address : {
+              address1: "8756 Laniti St.",
+              address2: "Maria Cons. Subd. Dau",
+              address3: "Mabalacat, Pampanga",
+              city: "Mabalacat City",
+              state: "HK",
+              country: "PH",
+              zip: "2010"
+            }
+        },
+        payment : {
+          accountNumber : "AYAB89"
+        },
+        service : {
+          code : "expedited" 
+        },
+        package : [
+          {
+            code : "02",
+            weight : "1"
+          },
+          {
+            code : "02",
+            weight : "1"
+          }
+      ]
+    }
+});
     
 ### ShipAccept
 
