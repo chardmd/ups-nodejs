@@ -75,36 +75,36 @@ The process to use the Shipping API consists of two phases, the ship confirm pha
           description: "Shipment to Philippines",
           shipper: {
             name: "Metro Inc Limited",
-            attentionName: "Linda Hung",
-            phone: "28928757",
-            shipperNumber: "AYAB89",
-            phone: "28928757",
+            attentionName: "John Doe",
+            phone: "12311",
+            shipperNumber: "A123B89",
+            phone: "1212311",
             address: {
-              address1: "Flat G, 8/F",
-              address2: "Sun East Industrial Centre",
-              address3: "16 Shing Yip Street",
-              city: "KWUN TONG",
+              address1: "Flat 9999",
+              address2: "Sun West Center Mall",
+              address3: "25 West Yip Street",
+              city: "Miami",
               state: "HK",
               country: "HK",
               zip: "75093"
             }
         },
         shipTo: {
-            companyName: "Metrosix sample ship",
-            attentionName: "Richard Dimalanta",
-            phone: "28928757",
+            companyName: "Company Name",
+            attentionName: "Pedro Calunsod",
+            phone: "12321341",
             address : {
-              address1: "8756 Laniti St.",
-              address2: "Maria Cons. Subd. Dau",
-              address3: "Mabalacat, Pampanga",
-              city: "Mabalacat City",
-              state: "HK",
+              address1: "999 Warrior St.",
+              address2: "Maria Cons. Subd. Shiper",
+              address3: "Stage, Valley",
+              city: "Stage City",
+              state: "PH",
               country: "PH",
               zip: "2010"
             }
         },
         payment : {
-          accountNumber : "AYAB89"
+          accountNumber : "A123B89"
         },
         service : {
           code : "expedited" 
