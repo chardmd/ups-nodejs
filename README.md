@@ -39,7 +39,7 @@ As of current writing, this is still in beta stage. Feel free to play around. I'
 | voidShipment           | available     |
 | timeInTransit          | available     |
 | ratingServiceSelection | available     |
-| tracking               | soon          |
+| tracking               | available     |
 
 #### Start Rocking!
 
@@ -268,6 +268,25 @@ The Rating API gives applications the ability to look up rates for UPS services 
             console.log(data);
           }
         });
+
+
+## 5) Tracking Services
+
+The Tracking API gives client applications access to UPS tracking information. With this service, clients query UPS to determine the up-to-the-minute status of a shipment or a package, including its delivery status and the time and location of the latest transit scan.
+
+          tracking.makeRequest({
+              customerContext: "Customer Data",
+              trackingNumber : "123123123ASDF23"
+          }, function(err, data) {
+            if (err) {
+              console.error(err);
+            }
+
+            if (data) {
+              //Enjoy playing the data :)
+              console.log(data);
+            }
+          });
 
 
 Richard Dimalanta
