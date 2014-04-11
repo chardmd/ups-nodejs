@@ -316,13 +316,6 @@ The Tracking API gives client applications access to UPS tracking information. W
         }
       });
 
-
-Richard Dimalanta
-=======================
-[http://ph.linkedin.com/in/richarddimalanta](http://ph.linkedin.com/in/richarddimalanta)         
-[https://plus.google.com/+RichardDimalanta](https://plus.google.com/+RichardDimalanta)        
-[https://twitter.com/charddimalanta](https://twitter.com/charddimalanta)        
-
 License
 =======================
 
