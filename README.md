@@ -39,12 +39,6 @@ Before we start, you need to have an access to UPS API. Getting access to the UP
 
 so are you ready? let's see it in action.
 
-### How to Install
-
-Run this [npm](http://npmjs.org/) command to install
-
-    npm install ups_node
-
 ## 1) How Shipping Services Work
 
 Shipping Services give your applications many ways to manage the shipment of small packages to their destination. UPS offers a range of delivery time frames from same day to standard ground transportation. Shipments may be within the United States or international, and they may range from letter documents to large packages. 
