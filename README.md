@@ -27,7 +27,7 @@ Before we start, you need to have an access to UPS API. Getting access to the UP
 
 |    API                 | Status        |
 |------------------------|---------------|
-| shipConfirm            | available     |
+| shipConfirm            | available     | 
 | shipAccept             | available     |
 | addressValidation      | available     |
 | voidShipment           | available     |
