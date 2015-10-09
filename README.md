@@ -27,7 +27,7 @@ Before we start, you need to have an access to UPS API. Getting access to the UP
 
 |    API                 | Status        |
 |------------------------|---------------|
-| shipConfirm            | available     | 
+| shipConfirm            | available     |
 | shipAccept             | available     |
 | addressValidation      | available     |
 | voidShipment           | available     |
@@ -49,7 +49,7 @@ The process to use the Shipping API consists of two phases, the ship confirm pha
 
 ##### Initialization
 
-    var ShipConfirm = require('./lib/shipConfirm');
+    var ShipConfirm = require('ups_node').ShipConfirm;
 
     var confirmShipment = new ShipConfirm(<API licenseId>, <API userId>, <API password>);
     
@@ -120,7 +120,7 @@ The process to use the Shipping API consists of two phases, the ship confirm pha
 
 ##### Initialization
 
-    var ShipAccept = require('./lib/shipAccept');
+    var ShipAccept = require('ups_node').ShipAccept;
 
     var acceptShipment = new ShipAccept(<API licenseId>, <API userId>, <API password>);
     
